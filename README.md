@@ -1,4 +1,4 @@
-Copy from https://github.com/use-go/onvif
+Copy from https://github.com/VacantHusky/onvif
 
 ## 修改了以下内容(Modified the following)
   - ./xsd/onvif/onvif.go

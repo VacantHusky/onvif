@@ -11,11 +11,11 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/VacantHusky/onvif/device"
+	"github.com/VacantHusky/onvif/gosoap"
+	"github.com/VacantHusky/onvif/networking"
+	wsdiscovery "github.com/VacantHusky/onvif/ws-discovery"
 	"github.com/beevik/etree"
-	"github.com/use-go/onvif/device"
-	"github.com/use-go/onvif/gosoap"
-	"github.com/use-go/onvif/networking"
-	wsdiscovery "github.com/use-go/onvif/ws-discovery"
 )
 
 //Xlmns XML Scheam
