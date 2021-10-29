@@ -6,6 +6,8 @@ Copy from https://github.com/use-go/onvif
 将 `struct` 中的 `\`xml:"onvif:XXXX"\`` 更改为 `\`xml:"XXXX"\``
 
 ### ./device/types.go
+
+#### GetServicesResponse
 将
 ```golang
 type GetServicesResponse struct {
@@ -16,6 +18,25 @@ type GetServicesResponse struct {
 ```golang
 type GetServicesResponse struct {
 	Service []Service
+}
+```
+#### GetServicesResponse
+将
+```
+type DeviceServiceCapabilities struct {
+	Network  NetworkCapabilities
+	Security SecurityCapabilities
+	System   SystemCapabilities
+	Misc     MiscCapabilities
+}
+```
+改为
+```
+type DeviceServiceCapabilities struct {
+	Network  *NetworkCapabilities
+	Security *SecurityCapabilities
+	System   *SystemCapabilities
+	Misc     *MiscCapabilities
 }
 ```
 

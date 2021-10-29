@@ -17,10 +17,10 @@ type Capabilities struct {
 }
 
 type DeviceServiceCapabilities struct {
-	Network  NetworkCapabilities
-	Security SecurityCapabilities
-	System   SystemCapabilities
-	Misc     MiscCapabilities
+	Network  *NetworkCapabilities
+	Security *SecurityCapabilities
+	System   *SystemCapabilities
+	Misc     *MiscCapabilities
 }
 
 type NetworkCapabilities struct {
