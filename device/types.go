@@ -56,9 +56,7 @@ type SecurityCapabilities struct {
 	MaxPasswordLength    int            `xml:"MaxPasswordLength,attr"`
 }
 
-type EAPMethodTypes struct {
-	Types []int
-}
+type EAPMethodTypes string
 
 type SystemCapabilities struct {
 	DiscoveryResolve         xsd.Boolean          `xml:"DiscoveryResolve,attr"`

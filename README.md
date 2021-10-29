@@ -40,6 +40,17 @@ type DeviceServiceCapabilities struct {
 }
 ```
 
+将
+```golang
+type EAPMethodTypes struct {
+	Types []int
+}
+```
+改为
+```golang
+type EAPMethodTypes string
+```
+
 ## 安装(Installation)
 
 To install the library,  use **go get**:
